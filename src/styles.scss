@@ -1,3 +1,40 @@
 @import 'primeng/resources/themes/lara-light-blue/theme.css';
 @import 'primeng/resources/primeng.css';
 @import 'primeicons/primeicons.css';
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 1px solid black;
+
+    .title {
+        flex: 1;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .button-container {
+        p-button {
+            margin-right: 30px;
+        }
+
+        p-button:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+}
