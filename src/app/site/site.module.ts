@@ -9,9 +9,10 @@ import { SpeedDialModule } from 'primeng/speeddial'
 
 import { SiteComponent } from './site.component'
 import { SiteListComponent } from './components/sitelist/site-list.component'
+import { SiteFormComponent } from './components/site-form/site-form.component'
 
 @NgModule({
-    declarations: [SiteComponent, SiteListComponent],
+    declarations: [SiteComponent, SiteListComponent, SiteFormComponent],
     imports: [
         CommonModule,
         ButtonModule,
