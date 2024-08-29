@@ -1,22 +1,30 @@
 <div class="container">
-    <div class="site-list-container">
-        <p-checkbox
-            class="select-checkbox"
-            [(ngModel)]="checked"
-            [binary]="true"
-            inputId="binary"
-        />
-        <div class="main-content">
-            <span>Motionless Cent</span>
-            <span>https://motionless-cent.name</span>
-        </div>
-        <div class="sub-content">2 Accounts</div>
-        <span class="actions">
-            <p-button
-                icon="pi pi-chevron-right"
-                [rounded]="true"
-                [outlined]="true"
-            />
-        </span>
-    </div>
+    <p-dataView #sitesdv [value]="sites" layout="list">
+        <ng-template pTemplate="list" let-sites>
+            <div *ngFor="let site of sites">
+                <div class="site-list-container">
+                    <p-checkbox
+                        class="select-checkbox"
+                        [(ngModel)]="checked[site.id]"
+                        [binary]="true"
+                        [inputId]="site.id"
+                    />
+                    <div class="main-content">
+                        <span>{{ site.name }}</span>
+                        <span>{{ site.url }}</span>
+                    </div>
+                    <div class="sub-content">
+                        {{ site.numAccounts }} Accounts
+                    </div>
+                    <span class="actions">
+                        <p-button
+                            icon="pi pi-chevron-right"
+                            [rounded]="true"
+                            [outlined]="true"
+                        />
+                    </span>
+                </div>
+            </div>
+        </ng-template>
+    </p-dataView>
 </div>
