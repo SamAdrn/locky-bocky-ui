@@ -8,7 +8,7 @@ import { DataViewModule } from 'primeng/dataview'
 import { SpeedDialModule } from 'primeng/speeddial'
 
 import { SiteComponent } from './site.component'
-import { SiteListComponent } from './components/sitelist/site-list.component'
+import { SiteListComponent } from './components/site-list/site-list.component'
 import { SiteFormComponent } from './components/site-form/site-form.component'
 
 @NgModule({
