@@ -32,6 +32,50 @@ nav {
     }
 }
 
+.container {
+    padding: 1rem 4rem;
+}
+
+.site-list-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: 3px solid black;
+    border-radius: 50px;
+    padding: 7px 10px;
+
+    .select-checkbox {
+        grid-column: span 1;
+
+        .p-checkbox {
+            width: 3rem;
+            height: 3rem;
+
+            .p-checkbox-box {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 30px;
+                display: flex;
+
+                .p-checkbox-icon {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .main-content {
+        grid-column: span 6;
+    }
+
+    .sub-content {
+        grid-column: span 3;
+    }
+
+    .actions {
+        grid-column: span 2;
+    }
+}
+
 @media (max-width: 768px) {
     html,
     body {
