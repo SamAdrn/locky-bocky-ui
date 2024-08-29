@@ -33,7 +33,7 @@ nav {
 }
 
 .container {
-    padding: 1rem 4rem;
+    padding: 1rem 7rem;
 }
 
 .site-list-container {
@@ -64,15 +64,46 @@ nav {
     }
 
     .main-content {
+        padding-left: 15px;
         grid-column: span 6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        span:first-child {
+            font-size: 1.4rem;
+            font-weight: bolder;
+        }
+
+        span:last-child {
+            margin-top: 2px;
+            font-size: 0.8rem;
+            font-family: monospace;
+            color: gray;
+        }
     }
 
     .sub-content {
+        padding-left: 15px;
         grid-column: span 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+        color: gray;
     }
 
     .actions {
+        padding-left: 15px;
         grid-column: span 2;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        .p-speeddial-button.p-button.p-button-icon-only {
+            width: 2rem;
+            height: 2rem;
+        }
     }
 }
 
