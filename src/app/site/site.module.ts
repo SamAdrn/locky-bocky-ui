@@ -7,10 +7,11 @@ import { CheckboxModule } from 'primeng/checkbox'
 import { DataViewModule } from 'primeng/dataview'
 import { SpeedDialModule } from 'primeng/speeddial'
 
-import { SiteListComponent } from './site-list.component'
+import { SiteComponent } from './site.component'
+import { SiteListComponent } from './components/sitelist/site-list.component'
 
 @NgModule({
-    declarations: [SiteListComponent],
+    declarations: [SiteComponent, SiteListComponent],
     imports: [
         CommonModule,
         ButtonModule,
@@ -19,6 +20,5 @@ import { SiteListComponent } from './site-list.component'
         CheckboxModule,
         SpeedDialModule,
     ],
-    exports: [SiteListComponent],
 })
-export class SiteListModule {}
+export class SiteModule {}

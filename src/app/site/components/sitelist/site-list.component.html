@@ -1,4 +1,5 @@
 <div class="container">
+    <p-button icon="pi pi-plus" label="Add Site" />
     <p-dataView #sitesdv [value]="sites" layout="list">
         <ng-template pTemplate="list" let-sites>
             <div *ngFor="let site of sites">
