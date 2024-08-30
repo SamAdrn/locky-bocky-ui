@@ -9,28 +9,7 @@
     <p-dataView #sitesdv [value]="sites" layout="list">
         <ng-template pTemplate="list" let-sites>
             <div *ngFor="let site of sites">
-                <div class="site-list-container">
-                    <p-checkbox
-                        class="select-checkbox"
-                        [(ngModel)]="checked[site.id]"
-                        [binary]="true"
-                        [inputId]="site.id"
-                    />
-                    <div class="main-content">
-                        <span>{{ site.name }}</span>
-                        <span>{{ site.url }}</span>
-                    </div>
-                    <div class="sub-content">
-                        {{ site.numAccounts }} Accounts
-                    </div>
-                    <span class="actions">
-                        <app-button
-                            icon="chevron-right"
-                            [rounded]="true"
-                            [outlined]="true"
-                        />
-                    </span>
-                </div>
+                <app-site [site]="site" />
             </div>
         </ng-template>
     </p-dataView>

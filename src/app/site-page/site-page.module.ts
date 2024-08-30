@@ -11,11 +11,12 @@ import { InputTextModule } from 'primeng/inputtext'
 import { SpeedDialModule } from 'primeng/speeddial'
 
 import { SitePageComponent } from './site-page.component'
+import { SiteComponent } from './components/site/site.component'
 import { SiteListComponent } from './components/site-list/site-list.component'
 import { SharedModule } from '../shared/shared.module'
 
 @NgModule({
-    declarations: [SitePageComponent, SiteListComponent],
+    declarations: [SitePageComponent, SiteComponent, SiteListComponent],
     imports: [
         CommonModule,
         CheckboxModule,

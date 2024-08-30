@@ -1,0 +1,115 @@
+@import '../../../shared/styles/variables';
+
+$checbox-size: 3rem;
+
+:host ::ng-deep {
+    // Expand checkbox size to fit container
+    .p-checkbox {
+        grid-column: span 1;
+        width: $checbox-size;
+        height: $checbox-size;
+
+        // Alter checkbox box shape with size changes
+        .p-checkbox-box {
+            width: $checbox-size;
+            height: $checbox-size;
+            border: 2px solid $dark-fade-color;
+            border-radius: 30px;
+            display: flex;
+        }
+
+        .p-checkbox-box:hover {
+            color: $light-fade-color;
+            background-color: $accent-light-color;
+        }
+
+        .p-checkbox-box.p-highlight {
+            border: 2px solid $accent-color;
+            background-color: $accent-color;
+        }
+    }
+}
+
+.site-container {
+    background-color: $light-color;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    border: 2.5px solid rgb($dark-color, 0.7);
+    border-radius: 50px;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    transition:
+        color 0.3s,
+        background-color 0.3s,
+        border 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        border: 2.5px solid rgb($dark-color, 0.4);
+        background-color: $accent-light-color;
+
+        // Apply hover effect to chevron-right button too
+        ::ng-deep app-button .p-button {
+            background-color: $accent-light-color;
+            color: $light-color;
+            border: 1px solid $accent-light-color;
+        }
+
+        span:nth-child(odd) {
+            color: $light-color;
+        }
+
+        span:nth-child(even),
+        .sub-content {
+            color: $light-fade-color;
+        }
+    }
+}
+
+div {
+    padding-left: 15px;
+}
+
+.content {
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span:nth-child(odd) {
+        font-size: 1.2rem;
+        font-weight: bolder;
+        color: $dark-fade-color;
+    }
+
+    span:nth-child(even) {
+        margin-top: 2px;
+        font-size: 0.8rem;
+        font-family: monospace;
+        color: $dark-fade-more-color;
+    }
+}
+
+.sub-content {
+    grid-column: span 3;
+    font-size: 1rem;
+    color: $dark-fade-more-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.actions {
+    display: flex;
+    grid-column: span 2;
+    justify-content: end !important;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .site-list-container {
+        border: 1.5px solid rgb($dark-color, 0.4);
+        border-radius: 10px;
+        margin-bottom: 13px;
+    }
+}

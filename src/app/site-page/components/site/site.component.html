@@ -1,0 +1,11 @@
+<div class="site-container">
+    <p-checkbox [(ngModel)]="checked" [binary]="true" [inputId]="site.uid" />
+    <div class="content">
+        <span>{{ site.name }}</span>
+        <span>{{ site.url }}</span>
+    </div>
+    <div class="sub-content">{{ site.numAccounts }} Accounts</div>
+    <div class="actions">
+        <app-button icon="chevron-right" [rounded]="true" [outlined]="true" />
+    </div>
+</div>
