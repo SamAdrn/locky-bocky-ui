@@ -10,12 +10,12 @@ import { InputGroupAddonModule } from 'primeng/inputgroupaddon'
 import { InputTextModule } from 'primeng/inputtext'
 import { SpeedDialModule } from 'primeng/speeddial'
 
-import { SiteComponent } from './site.component'
+import { SitePageComponent } from './site-page.component'
 import { SiteListComponent } from './components/site-list/site-list.component'
 import { SharedModule } from '../shared/shared.module'
 
 @NgModule({
-    declarations: [SiteComponent, SiteListComponent],
+    declarations: [SitePageComponent, SiteListComponent],
     imports: [
         CommonModule,
         CheckboxModule,
@@ -29,4 +29,4 @@ import { SharedModule } from '../shared/shared.module'
         SharedModule,
     ],
 })
-export class SiteModule {}
+export class SitePageModule {}

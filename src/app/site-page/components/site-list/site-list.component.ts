@@ -1,8 +1,8 @@
 import { Component } from '@angular/core'
-import { SITE_MOCK_DATA } from 'src/app/site/mock-data/site-mock.data'
+import { SITE_MOCK_DATA } from 'src/app/site-page/mock-data/site-mock.data'
 
 @Component({
-    selector: 'app-sitelist',
+    selector: 'app-site-list',
     templateUrl: './site-list.component.html',
 })
 export class SiteListComponent {
