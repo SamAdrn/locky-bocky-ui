@@ -2,80 +2,80 @@ import { Site } from './site.factory'
 
 export const SITE_MOCK_DATA = [
     {
-        name: 'Motionless Cent',
-        url: 'https://motionless-cent.name',
+        name: 'Google',
+        url: 'https://www.google.com',
         numAccounts: 2,
     },
     {
-        name: 'Silent Thunder',
-        url: 'https://silent-thunder.com',
+        name: 'Facebook',
+        url: 'https://www.facebook.com',
     },
     {
-        name: 'Vivid Horizon',
-        url: 'https://vivid-horizon.net',
+        name: 'Instagram',
+        url: 'https://www.instagram.com',
         numAccounts: 3,
     },
     {
-        name: 'Eternal Echo',
-        url: 'https://eternal-echo.org',
+        name: 'Twitter',
+        url: 'https://www.twitter.com',
+    },
+    {
+        name: 'LinkedIn',
+        url: 'https://www.linkedin.com',
+        numAccounts: 6,
+    },
+    {
+        name: 'GitHub',
+        url: 'https://www.github.com',
         numAccounts: 5,
     },
     {
-        name: 'Gleaming Star',
-        url: 'https://gleaming-star.edu',
-        numAccounts: 6,
-    },
-    {
-        name: 'Fading Ember',
-        url: 'https://fading-ember.io',
-    },
-    {
-        name: 'Radiant Aura',
-        url: 'https://radiant-aura.com',
+        name: 'YouTube',
+        url: 'https://www.youtube.com',
         numAccounts: 8,
     },
     {
-        name: 'Celestial Wave',
-        url: 'https://celestial-wave.net',
+        name: 'Reddit',
+        url: 'https://www.reddit.com',
         numAccounts: 9,
     },
     {
-        name: 'Nebula Drift',
-        url: 'https://nebula-drift.org',
+        name: 'Wikipedia',
+        url: 'https://www.wikipedia.org',
         numAccounts: 10,
     },
     {
-        name: 'Stellar Forge',
-        url: 'https://stellar-forge.edu',
+        name: 'Amazon',
+        url: 'https://www.amazon.com',
         numAccounts: 3,
     },
     {
-        name: 'Twilight Glow',
-        url: 'https://twilight-glow.io',
+        name: 'Netflix',
+        url: 'https://www.netflix.com',
         numAccounts: 11,
     },
     {
-        name: 'Luminous Quest',
-        url: 'https://luminous-quest.com',
-    },
-    {
-        name: 'Echoing Realm',
-        url: 'https://echoing-realm.net',
-        numAccounts: 12,
-    },
-    {
-        name: 'Glistening Dawn',
-        url: 'https://glistening-dawn.org',
+        name: 'Spotify',
+        url: 'https://www.spotify.com',
         numAccounts: 6,
     },
     {
-        name: 'Dazzling Horizon',
-        url: 'https://dazzling-horizon.edu',
+        name: 'Stack Overflow',
+        url: 'https://stackoverflow.com',
+        numAccounts: 12,
+    },
+    {
+        name: 'Quora',
+        url: 'https://www.quora.com',
+    },
+    {
+        name: 'Pinterest',
+        url: 'https://www.pinterest.com',
         numAccounts: 8,
     },
     {
-        name: 'Shadowed Peak',
-        url: 'https://shadowed-peak.io',
+        name: 'Slack',
+        url: 'https://www.slack.com',
         numAccounts: 5,
     },
 ].map((s) => new Site(s.name, s.url, s.numAccounts))
