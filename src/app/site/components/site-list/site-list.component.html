@@ -1,5 +1,10 @@
 <div class="container">
-    <p-button icon="pi pi-plus" label="Add Site" (onClick)="showForm()" />
+    <app-button
+        label="Add Site"
+        icon="plus"
+        [loading]="formVisible"
+        (click)="showForm()"
+    />
 
     <p-dataView #sitesdv [value]="sites" layout="list">
         <ng-template pTemplate="list" let-sites>
@@ -19,8 +24,8 @@
                         {{ site.numAccounts }} Accounts
                     </div>
                     <span class="actions">
-                        <p-button
-                            icon="pi pi-chevron-right"
+                        <app-button
+                            icon="chevron-right"
                             [rounded]="true"
                             [outlined]="true"
                         />

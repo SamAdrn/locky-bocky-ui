@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { FormsModule } from '@angular/forms'
 
-import { ButtonModule } from 'primeng/button'
 import { CheckboxModule } from 'primeng/checkbox'
 import { DataViewModule } from 'primeng/dataview'
 import { DialogModule } from 'primeng/dialog'
@@ -13,12 +12,12 @@ import { SpeedDialModule } from 'primeng/speeddial'
 
 import { SiteComponent } from './site.component'
 import { SiteListComponent } from './components/site-list/site-list.component'
+import { SharedModule } from '../shared/shared.module'
 
 @NgModule({
     declarations: [SiteComponent, SiteListComponent],
     imports: [
         CommonModule,
-        ButtonModule,
         CheckboxModule,
         DataViewModule,
         DialogModule,
@@ -27,6 +26,7 @@ import { SiteListComponent } from './components/site-list/site-list.component'
         InputTextModule,
         FormsModule,
         SpeedDialModule,
+        SharedModule,
     ],
 })
 export class SiteModule {}
