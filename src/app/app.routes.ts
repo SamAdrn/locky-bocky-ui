@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router'
-import { SiteListComponent } from './sitelist/site-list.component'
+import { SiteComponent } from './site/site.component'
 
 export const routes: Routes = [
     {
         path: '',
-        component: SiteListComponent,
+        component: SiteComponent,
     },
 ]
