@@ -1,5 +1,6 @@
 <div class="container">
-    <p-button icon="pi pi-plus" label="Add Site" />
+    <p-button icon="pi pi-plus" label="Add Site" (onClick)="showForm()" />
+
     <p-dataView #sitesdv [value]="sites" layout="list">
         <ng-template pTemplate="list" let-sites>
             <div *ngFor="let site of sites">
@@ -29,3 +30,35 @@
         </ng-template>
     </p-dataView>
 </div>
+
+<p-dialog
+    header="Add a New Site"
+    [modal]="true"
+    [(visible)]="formVisible"
+    [style]="{ width: '25rem' }"
+>
+    <p-inputGroup>
+        <p-inputGroupAddon><i class="pi pi-globe"></i></p-inputGroupAddon>
+        <input type="text" pInputText placeholder="Enter name of website..." />
+    </p-inputGroup>
+
+    <p-inputGroup>
+        <p-inputGroupAddon><i class="pi pi-link"></i></p-inputGroupAddon>
+        <input type="text" pInputText placeholder="Enter website URL..." />
+    </p-inputGroup>
+
+    <ng-template pTemplate="footer">
+        <p-button
+            label="Cancel"
+            severity="secondary"
+            size="small"
+            (onClick)="closeForm()"
+        />
+        <p-button
+            label="Save"
+            severity="success"
+            size="small"
+            (onClick)="submitForm()"
+        />
+    </ng-template>
+</p-dialog>

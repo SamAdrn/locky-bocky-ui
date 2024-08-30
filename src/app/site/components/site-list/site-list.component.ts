@@ -8,4 +8,17 @@ import { SITE_MOCK_DATA } from 'src/app/site/mock-data/site-mock.data'
 export class SiteListComponent {
     checked: { [id: string]: boolean } = {}
     sites = SITE_MOCK_DATA
+    formVisible = false
+
+    showForm() {
+        this.formVisible = true
+    }
+
+    closeForm() {
+        this.formVisible = false
+    }
+
+    submitForm() {
+        this.closeForm()
+    }
 }
