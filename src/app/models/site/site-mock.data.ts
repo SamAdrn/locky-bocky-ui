@@ -1,98 +1,81 @@
+import { Site } from './site.factory'
+
 export const SITE_MOCK_DATA = [
     {
-        id: 1,
         name: 'Motionless Cent',
         url: 'https://motionless-cent.name',
         numAccounts: 2,
     },
     {
-        id: 2,
         name: 'Silent Thunder',
         url: 'https://silent-thunder.com',
-        numAccounts: 4,
     },
     {
-        id: 3,
         name: 'Vivid Horizon',
         url: 'https://vivid-horizon.net',
         numAccounts: 3,
     },
     {
-        id: 4,
         name: 'Eternal Echo',
         url: 'https://eternal-echo.org',
         numAccounts: 5,
     },
     {
-        id: 5,
         name: 'Gleaming Star',
         url: 'https://gleaming-star.edu',
         numAccounts: 6,
     },
     {
-        id: 6,
         name: 'Fading Ember',
         url: 'https://fading-ember.io',
-        numAccounts: 7,
     },
     {
-        id: 7,
         name: 'Radiant Aura',
         url: 'https://radiant-aura.com',
         numAccounts: 8,
     },
     {
-        id: 8,
         name: 'Celestial Wave',
         url: 'https://celestial-wave.net',
         numAccounts: 9,
     },
     {
-        id: 9,
         name: 'Nebula Drift',
         url: 'https://nebula-drift.org',
         numAccounts: 10,
     },
     {
-        id: 10,
         name: 'Stellar Forge',
         url: 'https://stellar-forge.edu',
         numAccounts: 3,
     },
     {
-        id: 11,
         name: 'Twilight Glow',
         url: 'https://twilight-glow.io',
         numAccounts: 11,
     },
     {
-        id: 12,
         name: 'Luminous Quest',
         url: 'https://luminous-quest.com',
-        numAccounts: 4,
     },
     {
-        id: 13,
         name: 'Echoing Realm',
         url: 'https://echoing-realm.net',
         numAccounts: 12,
     },
     {
-        id: 14,
         name: 'Glistening Dawn',
         url: 'https://glistening-dawn.org',
         numAccounts: 6,
     },
     {
-        id: 15,
         name: 'Dazzling Horizon',
         url: 'https://dazzling-horizon.edu',
         numAccounts: 8,
     },
     {
-        id: 16,
         name: 'Shadowed Peak',
         url: 'https://shadowed-peak.io',
         numAccounts: 5,
     },
-]
+].map((s) => new Site(s.name, s.url, s.numAccounts))
