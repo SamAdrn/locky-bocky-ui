@@ -21,15 +21,21 @@
     [(visible)]="formVisible"
     [style]="{ width: '25rem' }"
 >
-    <p-inputGroup>
-        <p-inputGroupAddon><i class="pi pi-globe"></i></p-inputGroupAddon>
-        <input type="text" pInputText placeholder="Enter name of website..." />
-    </p-inputGroup>
+    <div class="dialog-container">
+        <p-inputGroup>
+            <p-inputGroupAddon><i class="pi pi-globe"></i></p-inputGroupAddon>
+            <input
+                type="text"
+                pInputText
+                placeholder="Enter name of website..."
+            />
+        </p-inputGroup>
 
-    <p-inputGroup>
-        <p-inputGroupAddon><i class="pi pi-link"></i></p-inputGroupAddon>
-        <input type="text" pInputText placeholder="Enter website URL..." />
-    </p-inputGroup>
+        <p-inputGroup>
+            <p-inputGroupAddon><i class="pi pi-link"></i></p-inputGroupAddon>
+            <input type="text" pInputText placeholder="Enter website URL..." />
+        </p-inputGroup>
+    </div>
 
     <ng-template pTemplate="footer">
         <p-button
