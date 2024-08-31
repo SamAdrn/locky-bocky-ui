@@ -16,16 +16,25 @@ $checbox-size: 3rem;
             border: 2px solid $dark-fade-color;
             border-radius: 30px;
             display: flex;
-        }
+            transition:
+                color 0.3s,
+                background-color 0.3s,
+                border 0.3s;
 
-        .p-checkbox-box:hover {
-            color: $light-fade-color;
-            background-color: $accent-light-color;
-        }
+            &:hover {
+                color: $light-fade-color;
+                background-color: $accent-light-color;
+            }
 
-        .p-checkbox-box.p-highlight {
-            border: 2px solid $accent-color;
-            background-color: $accent-color;
+            &.p-highlight {
+                border: 2px solid $accent-color;
+                background-color: $accent-color;
+            }
+
+            &.p-focus {
+                box-shadow: none;
+                border: 3px solid $accent-light-color;
+            }
         }
     }
 }
@@ -43,7 +52,7 @@ $checbox-size: 3rem;
         background-color 0.3s,
         border 0.3s;
 
-    &:hover {
+    &:hover:not(:has(.p-checkbox-box:hover)) {
         cursor: pointer;
         border: 2.5px solid rgb($dark-color, 0.4);
         background-color: $accent-light-color;

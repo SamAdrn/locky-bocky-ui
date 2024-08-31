@@ -1,21 +1,32 @@
 @import '../styles/variables';
 
 :host ::ng-deep {
-    .p-button,
-    .p-button-outlined:hover {
+    .p-button {
         color: $light-color;
         background-color: $accent-color;
         border: 1px solid $accent-color;
-    }
 
-    .p-button:hover {
-        background-color: $accent-light-color;
-        border: 1px solid $accent-light-color;
+        &:hover {
+            background-color: $accent-light-color;
+            border: 1px solid $accent-light-color;
+        }
+
+        &:focus {
+            box-shadow: none;
+            border: 3px solid $accent-light-color;
+        }
     }
 
     .p-button-outlined {
         color: $accent-color;
         background-color: transparent;
         border: 1px solid $accent-color;
+
+        &:hover,
+        &:not(:disabled):active {
+            color: $light-color;
+            background-color: $accent-color;
+            border: 1px solid $accent-color;
+        }
     }
 }
